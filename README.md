@@ -32,4 +32,4 @@ dotnet run
 - .NET 6
 - C# 10
 - ASP.NET MVC
-- API RESTful
+- API RESTfull
