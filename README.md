@@ -12,10 +12,10 @@ CaixaRegistradora/ ├── FrontEnd/ └── BackEnd/
 ## Imagens
 
 ![Imagem 1](https://github.com/Matheusjkl35647/CaixaRegistradora/blob/main/ImagensProjeto/Backend.png)
-![Imagem 2](CaixaRegistradora/ImagensProjeto/FrontEnd1.png)
-![Imagem 3](CaixaRegistradora/ImagensProjeto/FrontEnd2.png)
-![Imagem 4](CaixaRegistradora/ImagensProjeto/FrontEnd3.png)
-![Imagem 5](CaixaRegistradora/ImagensProjeto/FrontEnd4.png)
+![Imagem 2](https://github.com/Matheusjkl35647/CaixaRegistradora/blob/main/ImagensProjeto/FrontEnd1.png)
+![Imagem 3](https://github.com/Matheusjkl35647/CaixaRegistradora/blob/main/ImagensProjeto/FrontEnd2.png)
+![Imagem 4](https://github.com/Matheusjkl35647/CaixaRegistradora/blob/main/ImagensProjeto/FrontEnd3.png)
+![Imagem 5](https://github.com/Matheusjkl35647/CaixaRegistradora/blob/main/ImagensProjeto/FrontEnd4.png)
 
 ## Como Rodar o Projeto
 
