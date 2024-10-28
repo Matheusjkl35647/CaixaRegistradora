@@ -36,6 +36,12 @@ dotnet run
 - ASP.NET MVC
 - API RESTfull
 
+# Melhorias futuras
+- Separar os controladores para cada tela;
+- Autenticação de segurança para consumir as API`s;
+- Integrar a um banco de dados;
+- Tela de login e cadastro de usuário.
+
 ## Contatos
 <div>
 <a href="https://instagram.com/matheusjhonathan" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
