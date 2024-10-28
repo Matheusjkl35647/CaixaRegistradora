@@ -1,0 +1,36 @@
+@{
+    ViewBag.Title = "Sangria do Caixa";
+    bool isError = !string.IsNullOrEmpty(ViewBag.Mensagem) && ViewBag.Mensagem.Contains("Erro");
+}
+
+<div class="container mt-5">
+    <h4>Sangria do Caixa</h4>
+
+    @if (!string.IsNullOrEmpty(ViewBag.Mensagem))
+    {
+        <div id="alert-message" class="alert @(isError ? "alert-danger" : "alert-success")">
+            @ViewBag.Mensagem
+        </div>
+    }
+
+    <form method="post" asp-action="Sangria" asp-controller="Home">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Cédula: Quantidade-Valor (ex: 2-100C)" id="input-sangria" name="inputSangria" required />
+            <button class="btn btn-primary" type="submit">Realizar Sangria</button>
+        </div>
+        <div class="form-text" id="input-help">Siga o padrão "quantidade-valorC", ex: "2-100C" ou "2-100M".</div>
+    </form>
+</div>
+
+@section Scripts {
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const alertMessage = document.getElementById('alert-message');
+        if (alertMessage) {
+            setTimeout(() => {
+                alertMessage.style.display = 'none';
+            }, 5000);
+        }
+    });
+</script>
+}

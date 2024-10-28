@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Caixa Registradora";
+}
+
+<div class="container mt-5">
+    <h1>@ViewData["Title"]</h1>
+
+    <div class="mb-4">
+        <h4>Alimentar o Caixa</h4>
+        <form id="form-alimentar">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Ex: 5-C10 para cinco cédulas de 10 reais" id="input-alimentar">
+                <button class="btn btn-primary" type="submit">Alimentar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="mb-4">
+        <button class="btn btn-info" id="btn-saldo">Consultar Saldo</button>
+        <div id="saldo-container" class="mt-3"></div>
+    </div>
+
+    <div class="mb-4">
+        <button class="btn btn-warning" id="btn-reset">Resetar Caixa</button>
+    </div>
+
+    <div class="mb-4">
+        <h4>Operação de Recebimento</h4>
+        <form id="form-recebimento">
+            <div class="mb-3">
+                <label for="valor-operacao" class="form-label">Valor da Operação (R$)</label>
+                <input type="number" step="0.01" class="form-control" id="valor-operacao">
+            </div>
+            <div class="mb-3">
+                <label for="valor-pago" class="form-label">Valor Pago (R$)</label>
+                <input type="number" step="0.01" class="form-control" id="valor-pago">
+            </div>
+            <button class="btn btn-success" type="submit">Receber</button>
+        </form>
+    </div>
+
+    <div id="troco-container" class="mt-3"></div>
+
+    <div>
+        <h3>Sangria do Caixa</h3>
+        <form id="form-sangria">
+            <input type="text" id="input-sangria" placeholder="Cédula: Quantidade-Valor (ex: 2-100C)">
+            <button type="submit">Realizar Sangria</button>
+        </form>
+        <div id="sangria-mensagem"></div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+@section Scripts {
+    <script src="~/js/caixaController.js"></script>
+}

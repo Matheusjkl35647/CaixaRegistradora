@@ -1,0 +1,110 @@
+[
+  {
+    "Tipo": "Reset",
+    "Valor": 0,
+    "Descricao": "Caixa foi resetado",
+    "Data": "2024-10-24T18:52:30.856991-03:00"
+  },
+  {
+    "Tipo": "Consulta de Saldo",
+    "Valor": 0,
+    "Descricao": "Consulta ao saldo do caixa",
+    "Data": "2024-10-24T18:53:21.215662-03:00"
+  },
+  {
+    "Tipo": "Consulta de Saldo",
+    "Valor": 0,
+    "Descricao": "Consulta ao saldo do caixa",
+    "Data": "2024-10-24T18:53:34.869918-03:00"
+  },
+  {
+    "Tipo": "Alimenta\u00E7\u00E3o de caixa",
+    "Valor": 500,
+    "Descricao": "Caixa alimentado com sucesso",
+    "Data": "2024-10-24T18:53:43.400302-03:00"
+  },
+  {
+    "Tipo": "Alimenta\u00E7\u00E3o de caixa",
+    "Valor": 250,
+    "Descricao": "Caixa alimentado com sucesso",
+    "Data": "2024-10-24T18:53:49.52808-03:00"
+  },
+  {
+    "Tipo": "Alimenta\u00E7\u00E3o de caixa",
+    "Valor": 20,
+    "Descricao": "Caixa alimentado com sucesso",
+    "Data": "2024-10-24T18:53:53.823584-03:00"
+  },
+  {
+    "Tipo": "Consulta de Saldo",
+    "Valor": 770,
+    "Descricao": "Consulta ao saldo do caixa",
+    "Data": "2024-10-24T18:53:58.685622-03:00"
+  },
+  {
+    "Tipo": "Alimenta\u00E7\u00E3o de caixa",
+    "Valor": 60,
+    "Descricao": "Caixa alimentado com sucesso",
+    "Data": "2024-10-24T18:54:06.729519-03:00"
+  },
+  {
+    "Tipo": "Consulta de Saldo",
+    "Valor": 830,
+    "Descricao": "Consulta ao saldo do caixa",
+    "Data": "2024-10-24T18:54:07.604746-03:00"
+  },
+  {
+    "Tipo": "Sagria",
+    "Valor": 500,
+    "Descricao": "Sangria de caixa",
+    "Data": "2024-10-24T18:54:21.196867-03:00"
+  },
+  {
+    "Tipo": "Consulta de Saldo",
+    "Valor": 330,
+    "Descricao": "Consulta ao saldo do caixa",
+    "Data": "2024-10-24T18:54:26.179337-03:00"
+  },
+  {
+    "Tipo": "Alimenta\u00E7\u00E3o de caixa",
+    "Valor": 400,
+    "Descricao": "Caixa alimentado com sucesso",
+    "Data": "2024-10-24T18:54:49.20061-03:00"
+  },
+  {
+    "Tipo": "Consulta de Saldo",
+    "Valor": 730,
+    "Descricao": "Consulta ao saldo do caixa",
+    "Data": "2024-10-24T18:54:54.698778-03:00"
+  },
+  {
+    "Tipo": "Sagria",
+    "Valor": 50,
+    "Descricao": "Sangria de caixa",
+    "Data": "2024-10-24T18:55:08.130349-03:00"
+  },
+  {
+    "Tipo": "Consulta de Saldo",
+    "Valor": 680,
+    "Descricao": "Consulta ao saldo do caixa",
+    "Data": "2024-10-24T18:55:12.346469-03:00"
+  },
+  {
+    "Tipo": "Recebimento",
+    "Valor": 150,
+    "Descricao": "Recebimento",
+    "Data": "2024-10-24T18:55:40.53545-03:00"
+  },
+  {
+    "Tipo": "Recebimento",
+    "Valor": 150,
+    "Descricao": "Recebimento",
+    "Data": "2024-10-24T18:55:40.53545-03:00"
+  },
+  {
+    "Tipo": "Consulta de Saldo",
+    "Valor": 780,
+    "Descricao": "Consulta ao saldo do caixa",
+    "Data": "2024-10-24T18:55:44.428366-03:00"
+  }
+]

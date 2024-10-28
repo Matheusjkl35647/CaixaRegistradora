@@ -1,0 +1,52 @@
+@{
+    ViewBag.Title = "Operação de Recebimento";
+    bool isError = !string.IsNullOrEmpty(ViewBag.Message) && ViewBag.Message.Contains("Erro");
+}
+
+<div class="container mt-5">
+    <h4>Operação de Recebimento</h4>
+
+    @if (!string.IsNullOrEmpty(ViewBag.Message))
+    {
+        <div id="alert-message" class="alert @(isError ? "alert-danger" : "alert-success")">
+            @ViewBag.Message
+        </div>
+    }
+
+    <form method="post" asp-action="Recebimento" asp-controller="Home">
+        <div class="mb-3">
+            <label for="valor-operacao" class="form-label">Valor da Operação (R$)</label>
+            <input type="number" step="0.01" class="form-control" id="valor-operacao" name="valorOperacao" required>
+        </div>
+        <div class="mb-3">
+            <label for="valor-pago" class="form-label">Valor Pago (R$)</label>
+            <input type="number" step="0.01" class="form-control" id="valor-pago" name="valorPago" required>
+        </div>
+        <button class="btn btn-success" type="submit">Receber</button>
+        </form>
+
+    @if (!string.IsNullOrEmpty(ViewBag.Mensagem))
+    {
+        <div class="alert alert-info mt-3">
+            @ViewBag.Mensagem <br>
+            @if (!string.IsNullOrEmpty(ViewBag.Troco))
+            {
+                <strong>@ViewBag.Troco</strong>
+            }
+        </div>
+    }
+
+</div>
+
+@section Scripts {
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const alertMessage = document.getElementById('alert-message');
+            if (alertMessage) {
+                setTimeout(() => {
+                    alertMessage.style.display = 'none';
+                }, 5000);
+            }
+        });
+    </script>
+}

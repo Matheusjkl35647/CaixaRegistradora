@@ -1,0 +1,74 @@
+@{
+    ViewBag.Title = "Alimentar Caixa";
+    bool isError = !string.IsNullOrEmpty(ViewBag.Message) && ViewBag.Message.Contains("Erro");
+}
+
+<div class="container mt-5">
+    <h4>Alimentar o Caixa</h4>
+
+    @if (!string.IsNullOrEmpty(ViewBag.Message))
+    {
+        <div id="alert-message" class="alert @(isError ? "alert-danger" : "alert-success")">
+            @ViewBag.Message
+        </div>
+    }
+
+    <form method="post" asp-action="AlimentarCaixa" asp-controller="Home">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Ex: 5-10C para cinco cédulas de 10 reais" id="input-alimentar" name="inputAlimentar" />
+            <button class="btn btn-primary" type="submit">Alimentar</button>
+        </div>
+        <div class="form-text" id="input-help">Siga o padrão "quantidade-valorC", ex: "5-10C" ou "5-10M".</div>
+    </form>
+
+    <div class="d-flex justify-content-between mt-4">
+        <form method="get" asp-action="ConsultarSaldo" asp-controller="Home">
+            <button class="btn btn-info" type="submit">Consultar Saldo</button>
+        </form>
+
+        <form method="post" asp-action="ResetarCaixa" asp-controller="Home">
+            <button class="btn btn-warning" type="submit">Resetar Caixa</button>
+        </form>
+    </div>
+
+
+    @if (ViewBag.SaldoTotal != null && ViewBag.DetalhesSaldo != null)
+    {
+        <div class="alert alert-info mt-3">
+            <strong>Saldo Total: R$ @ViewBag.SaldoTotal</strong>
+        </div>
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var detalhe in ViewBag.DetalhesSaldo)
+                {
+                    var valor = detalhe.Key.Substring(1);
+                    var unidade = detalhe.Key.StartsWith("C") ? "cédulas" : "moedas";
+                    var descricao = detalhe.Key.StartsWith("C") ? $"{valor} Reais" : $"{valor} centavos";
+                    <tr>
+                        <td>@descricao</td>
+                        <td>@detalhe.Value @unidade</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const alertMessage = document.getElementById('alert-message');
+            if (alertMessage) {
+                setTimeout(() => {
+                    alertMessage.style.display = 'none';
+                }, 5000);
+            }
+        });
+    </script>
+}

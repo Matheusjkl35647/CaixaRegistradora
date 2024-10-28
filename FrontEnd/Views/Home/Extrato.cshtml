@@ -1,0 +1,35 @@
+@{
+    var extrato = ViewBag.Extrato as List<ExtratoItem>;
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tipo</th>
+            <th>Valor</th>
+            <th>Descrição</th>
+            <th>Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (extrato != null && extrato.Count > 0)
+        {
+            foreach (var item in extrato.OrderByDescending(e => e.Data))
+            {
+                <tr>
+                    <td>@item.Tipo</td>
+                    <td>R$ @item.Valor.ToString("N2")</td>
+                    <td>@item.Descricao</td>
+                    <td>@item.Data.ToString("dd/MM/yyyy HH:mm")</td>
+                </tr>
+            }   
+        }
+        else
+        {
+            <tr>
+                <td colspan="4">Nenhum registro encontrado.</td>
+            </tr>
+        }
+    </tbody>
+</table>
