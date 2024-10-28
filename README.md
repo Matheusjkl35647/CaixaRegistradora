@@ -18,13 +18,17 @@ CaixaRegistradora/ |── FrontEnd/ |── BackEnd/
 
 ## Como Rodar o Projeto
 
-## BackEnd
+# BackEnd
+```bash
 cd BackEnd
 dotnet run
+```
 
-## FrontEnd
+# FrontEnd
+```bash
 cd FrontEnd
 dotnet run
+```
 
 ## Tecnologias Utilizadas
 - .NET 6
