@@ -11,7 +11,7 @@ CaixaRegistradora/ ├── FrontEnd/ └── BackEnd/
 
 ## Imagens
 
-![Imagem 1]([CaixaRegistradora/ImagensProjeto/Backend.png](https://github.com/Matheusjkl35647/CaixaRegistradora/blob/main/ImagensProjeto/Backend.png))
+![Imagem 1](https://github.com/Matheusjkl35647/CaixaRegistradora/blob/main/ImagensProjeto/Backend.png)
 ![Imagem 2](CaixaRegistradora/ImagensProjeto/FrontEnd1.png)
 ![Imagem 3](CaixaRegistradora/ImagensProjeto/FrontEnd2.png)
 ![Imagem 4](CaixaRegistradora/ImagensProjeto/FrontEnd3.png)
